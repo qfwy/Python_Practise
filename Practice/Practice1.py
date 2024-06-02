@@ -201,6 +201,54 @@
 #     yesterday=(now+1)*2
 #     now=yesterday
 # print(yesterday)
-"""两个乒乓球队进行比赛，各出三人。甲队为a,b,c三人，乙队为x,y,z三人。已抽签决定比赛名单。
-有人向队员打听比赛的名单。a说他不和x比，c说他不和x,z比，请编程序找出三队赛手的名单。"""
+# """两个乒乓球队进行比赛，各出三人。甲队为a,b,c三人，乙队为x,y,z三人。已抽签决定比赛名单。
+# 有人向队员打听比赛的名单。a说他不和x比，c说他不和x,z比，请编程序找出三队赛手的名单。"""
+# for i in range(ord('x'),ord('z') + 1):
+#     for j in range(ord('x'),ord('z') + 1):
+#         if i != j:
+#             for k in range(ord('x'),ord('z') + 1):
+#                 if (i != k) and (j != k):
+#                     if (i != ord('x')) and (k != ord('x')) and (k != ord('z')):
+#                         print ('order is a -- %s\t b -- %s\tc--%s' % (chr(i),chr(j),chr(k)))
+#
+# """
+#    *
+#   ***
+#  *****
+# *******
+#  *****
+#   ***
+#    *"""
+# for i in range(1,5):
+#     print(" "*(4-i),"*"*(2*i-1))
+# for i in range(3,0,-1):
+#     print(" "*(4-i),"*"*(2*i-1))
 
+# """有一分数序列：2/1，3/2，5/3，8/5，13/8，21/13...求出这个数列的前20项之和。"""
+# result=0
+# total=int(input("Total:"))
+# def num_up(total):
+#     a, b = 1, 2
+#     for i in range(1,total+1):
+#         a,b=b,a+b
+#     return a
+#
+# def num_down(total):
+#     a, b = 1, 2
+#     for i in range(1,total):
+#         a,b=b,a+b
+#     return a
+#
+# for i in range(1,total+1):
+#     numerator=num_up(i)
+#     denominator=num_down(i)
+#     result+=numerator/denominator
+# print(result)
+# """题目：求1+2!+3!+...+20!的和。"""
+# new_now=1
+# result=0
+# for i in range(1,21):
+#     now=i
+#     new_now *= now
+#     result += new_now
+# print(result)
